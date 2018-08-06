@@ -16,7 +16,7 @@ def login_view(request):
             return render(request,'index.html',{'users':userss})
         else:
             return HttpResponse("<h3>wrong username or password</h3>"
-                                "<a href='/homepage/'><input type='button' value='login'></a>")
+                                "<a href='/'><input type='button' value='login'></a>")
 
 
 
@@ -36,7 +36,7 @@ def signup(request):
                 flag=1
         if flag==1:
             return HttpResponse("<h3>Username all ready there.<br>Choose a different username</h3>"
-                                "<a href='/homepage/signup/'><input type='button' value='SignUp'></a>")
+                                "<a href='/signup/'><input type='button' value='SignUp'></a>")
         else:
             user_instance = user.objects.create(username=username_temp,password=password_temp,phone_number=phone,email=email_temp)
             return render(request,'index.html',{'users':user_instance})
