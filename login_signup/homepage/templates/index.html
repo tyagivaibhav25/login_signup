@@ -1,0 +1,45 @@
+<head>
+    <style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome User</h1>
+
+
+<table style="border: 1px solid black;">
+    <thead></thead>
+    <tbody>
+    <tr>
+    <th><h3>Name =</h3></th>
+    <th><h3>{{users}}</h3></th>
+    </tr>
+    <tr>
+    <th><h3>Password =</h3></th>
+    <th><h3>{{users.password}}</h3></th>
+    </tr>
+    <tr>
+    <th><h3>ID =</h3></th>
+    <th><h3>{{users.id}}</h3></th>
+    </tr>
+    <tr>
+    <th><h3>Email =</h3></th>
+    <th><h3>{{users.email}}</h3></th>
+    </tr>
+    <tr>
+    <th><h3>Phone number=</h3></th>
+    <th><h3>{{users.phone_number}}</h3></th>
+    </tr>
+</tbody>
+</table>
+<h4>For Login Click login button <a href="/homepage/"><input type="button" value="login"></a></h4>
+</body>
+</html>

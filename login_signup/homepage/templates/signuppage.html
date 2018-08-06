@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+        <form method="post">
+            <div style="height:200px"></div>
+            <div style="text-align:center">
+                Username <input type="text" name="usrname" required><br><br>
+                Password <input type="password" name="pass" required><br><br>
+                Email <input type="email" name="email"><br><br>
+                phone-number <input type="tel" name="tel"><br><br>
+                <button type="submit">Singup</button>
+                <a href="/"><input type="button" value="login"></a>
+            </div>
+            {% csrf_token %}
+        </form>
+
+    </body>
+</html>
